@@ -4,13 +4,14 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cout << "یک عدد وارد کنید:" ;
-    cin >> n;
-    cout << "اعداد کوچکتر از" << n << ":" << endl ;
+    int n ;
+    cout << "enter a number:";
+    cin >> n ;
 
-    for (int i=1 ; i<n ; i++){
-        cout << i << endl ;
+    for (int i=1 ; i<=n ; i++){
+        if (n%i==0){
+            cout << i << endl ;
+        }
     }
     return 0;
 }
